@@ -1,15 +1,14 @@
 {
   "gmail": {
     "username": " ",
-
-    "password": " "
+    "oAuth": " "
   },
   "twitter": {
     "username": " ",
-    "password": "  "
+    "oAuth": "  "
   },
   "github": {
     "username": " ",
-    "password": " "
+    "oAuth": " "
   }
 }

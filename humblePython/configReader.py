@@ -2,18 +2,23 @@ import os.path
 import json
 import sys
 class configReader(object):
-    data = " "
+    ##data = " "
     """Use this to read the config.txt. If you decide to get rid of the other languages, change
         filepath to os.path.abspath(os.path.join(basepath,"config.txt"))"""
     basepath = os.path.dirname(__file__)
     jsonFile = os.path.abspath(os.path.join(basepath,"..","config.json"))
-    ##f = open(__filepath,"r")
+    ##thanks /u/novel_yet_trivial
+    with open(jsonFile, "r") as configFile:
+        data = json.load(configFile)
     @classmethod
-    def twitterUserName(this):
-        with open(this.jsonFile,"r") as configFile:
-            data = json.load(configFile)
-        return str(data["twitter"]["username"])
+    def twitterUserName(cls):
+        return this.data["twitter"]["username"]
     @classmethod
-    def twitterDisplayName(this):
+    def twitterDisplayName(cls):
         return str("@" + this.twitterUserName())
-    
+    @classmethod
+    @classmethod
+    @classmethod
+    @classmethod
+    @classmethod
+    @classmethod
